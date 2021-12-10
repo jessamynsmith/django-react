@@ -12,7 +12,7 @@ function App() {
 
     // we will use async/await to fetch this data
     async function getData() {
-      const response = await fetch("https://www.anapioficeandfire.com/api/books");
+      const response = await fetch("/api/v1/books/");
       const data = await response.json();
 
       // store the data into our books variable

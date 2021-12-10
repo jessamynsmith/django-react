@@ -3,11 +3,13 @@
 {% block extra_head %}
     <link rel="apple-touch-icon" href="{% static 'logo192.png' %}"/>
     <link rel="manifest" href="{% static 'manifest.json' %}"/>
-    <link href="{% static 'static/css/main.8c8b27cf.chunk.css' %}" rel="stylesheet">
+    <link href="{% static 'static/css/main.min.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
   <h1>Django React Example App</h1>
+    
+  <p>Welcome, {{ request.user }}</p>
 
   <p>Here is the React app:</p>
 
