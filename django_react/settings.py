@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    'app',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +69,7 @@ ROOT_URLCONF = 'django_react.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'django_react' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
