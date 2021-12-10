@@ -2,9 +2,11 @@ import requests
 
 from django.views.generic import TemplateView
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
+
 from rest_framework import authentication
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 
 class HomeView(TemplateView):
@@ -13,6 +15,7 @@ class HomeView(TemplateView):
 
 class BooksView(APIView):
     authentication_classes = [authentication.SessionAuthentication]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, format=None):
         """
