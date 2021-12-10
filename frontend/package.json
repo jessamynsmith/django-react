@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/static/js/main*.js build/static/js/main.min.js && cp build/static/js/2.*.js build/static/js/2.min.js",
+    "build": "react-scripts build && cp build/static/js/main*.js build/static/js/main.min.js && cp build/static/js/2.*.js build/static/js/2.min.js && cp build/static/css/main*.css build/static/css/main.min.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
